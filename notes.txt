@@ -1,0 +1,24 @@
+readline module. 
+Interface instance, input stream. .createInterface(). input,output object arguments. input eg =process.stdin. output eg=process.stdout. 
+listen for input. .question() method of the Interface instance. paramters : string; object, optional, options, can pass 'abort' signal (AbortController); function object, callback,execute when input is received (event,async).
+close the Interface instance in the callback. .close method.
+
+AbortController(). add a timer to the listening activity and cancel it when a certain amount of time has passed.
+.addEventListener() method. 3 parameters. "abort" event name to listen for, callback to execute, and some object. 
+
+prompt-sync module. npm i prompt-sync;
+require call is called.
+synchronous method is returend from above. node instance will waut for the input before executing the next line.
+
+aysnc function fx(){await() return 2} vs new Promise  fx().then().catch()
+
+operations.
+asynchronous loading into the memory (execution of file instance=program). simultaneous (mostly dependent) processes (in their own synchronous chains, called threads). handled or result availability.
+asynchronous code. callbacks. promises. async/await. 
+promise. assureance of some code execution,program thread. assurance of something being done with a result. track execution. determine the code after getting the result---event occurring. 
+3-state object. pending, initially. resolved. rejected.
+eg. requesting data from a database server program instance. pending state until a result is received. resolved or rejected.
+resolved state of result. handling. .then() method.
+rejected state of result. handling. .catch() method.
+run a code after handling. .finally() method. runs regardless of the state of the promise, i.e., something characteristic of the event that the promise entails. 
+
