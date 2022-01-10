@@ -1,0 +1,3 @@
+const x=require('prompt-sync')(); const z=new Promise(function(a,b){if(parseInt(x("enter 4: "))===2*2){a();}else{b();}});
+z.then(function(){console.log("a resolved state code block here...");}).catch(function(){console.log(" the rejected state code block here...");}).finally(function(){console.log("final, event-characteristc thread-ender block for this thread.");});
+console.log("Event of promise.");
